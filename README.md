@@ -26,7 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-<h1 align="center">Welcome to LoveStories 👋</h1>
+<h1 align="center">Welcome to Frontend Apps 👋</h1>
 <p>
   <img src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <img src="https://img.shields.io/badge/npm-%3E%3D5.5.0-blue.svg" />
@@ -42,10 +42,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
   </a>
 </p>
 
-> A dating app that reconnects potential love interests and crushes. At one point in your life you might have encountered a cute person whilst travelling on the train or doing your daily walk around the park. You and a cute person lock eye contact and flirt, but suddenly you reached your destination and it is time for both of you to part ways. But after you return home, you thought it was a pity that you didn&#39;t ask for a phone number from that cute person! This app allows you to post a story about that special encounter, and hopefully your crush might respond too!
+> Welcome to my README.md, where I will try to take you on a magical journey with Angular ~~2~~ ~~4~~ 8!
 
-### 🏠 [Homepage](https://github.com/patrick-ve/LoveStories)
-Checkout the project on https://peaceful-dawn-68577.herokuapp.com/
+### 🏠 [Homepage](https://github.com/patrick-ve/frontend-apps)
+
 
 ## 💻 Prerequisites
 
@@ -56,7 +56,12 @@ Checkout the project on https://peaceful-dawn-68577.herokuapp.com/
 
 Clone the repository into a folder
 ```sh
-git clone https://github.com/patrick-ve/LoveStories.git
+git clone https://github.com/patrick-ve/frontend-apps.git
+```
+
+Install the Angular CLI
+```sh
+sudo npm install -g @angular/cli
 ```
 
 Install required npm packages
@@ -64,10 +69,10 @@ Install required npm packages
 npm install
 ```
 
-## 🏃‍ Run app
+## 🏃‍ Build app
 
 ```sh
-npm run start
+ng build
 ```
 
 ## 🔑 .env
