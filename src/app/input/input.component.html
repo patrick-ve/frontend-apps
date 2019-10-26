@@ -1,0 +1,9 @@
+<label for="people-select">Kies een volk uit Indonesië</label>
+
+<select name="peoples" id="people-select">
+    <option [value]="people.name" *ngFor="let people of peoples">{{ people.name }}</option>
+</select>
+
+<button (click)="sumbit()">
+    Verstuur
+</button>
