@@ -60,6 +60,28 @@ app-input {
         0 40px 60px -5px rgba(248, 247, 237, 0.3);
 }
 
+
+button {
+    color: #333;
+    font-size: .8em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    min-width: 100px;
+    max-width: 60%;
+    position: relative;
+    margin: 0 auto;
+    border: 2px solid transparent;
+    transition: all .2s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+}
+
+
+
+button:hover {
+    border-color: #c75842;
+    transition: border-color .2s .2s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+}
+
+
 @font-face {
     font-family: Indonesiana;
     src: url("assets/Indonesiana.woff") format('woff');
