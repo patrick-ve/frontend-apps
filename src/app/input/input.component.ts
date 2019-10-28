@@ -10,6 +10,7 @@ import { people } from '../peoples'
 })
 export class InputComponent {
     peoples = people
+    selectedOption: string
 
     title = 'image-gallery'
     private data: any = []
