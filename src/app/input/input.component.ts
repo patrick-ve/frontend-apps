@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
+import { HttpClient } from '@angular/common/http'
 
-import { people } from '../peoples';
+import { people } from '../peoples'
 
 @Component({
     selector: 'app-input',
@@ -8,9 +9,16 @@ import { people } from '../peoples';
     styleUrls: ['./input.component.css']
 })
 export class InputComponent {
-    peoples = people;
+    peoples = people
 
-    share() {
-        window.alert('The product has been shared!');
+    title = 'image-gallery'
+    private data: any = []
+    constructor(private http: HttpClient) {}
+    getData() {
+        const url = 'https://jsonplaceholder.typicode.com/photos?albumId=1'
+        this.http.get(url).subscribe(res => {
+            this.data = res
+            console.log(this.data)
+        })
     }
 }
