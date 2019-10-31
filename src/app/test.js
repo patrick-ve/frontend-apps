@@ -24,3 +24,73 @@ constructor(private http: HttpClient) {
             // console.log(this.query)
             console.log(('b' + 'a' + +'a' + 'a' + 's').toLowerCase());
         })
+
+        const queryWestJava = `
+        PREFIX dc: < http: //purl.org/dc/elements/1.1/>
+            PREFIX dct: < http: //purl.org/dc/terms/>
+            PREFIX skos: < http: //www.w3.org/2004/02/skos/core#>
+            PREFIX edm: < http: //www.europeana.eu/schemas/edm/>
+            PREFIX foaf: < http: //xmlns.com/foaf/0.1/>
+            SELECT ? obj ? link ? title WHERE {
+                ?
+                obj edm: isShownBy ? link. ?
+                    obj dc : title ? title. ?
+                    obj dc : subject < https : //hdl.handle.net/20.500.11840/termmaster4872> .
+
+                    FILTER langMatches(lang( ? title), "ned")
+            }`
+
+        const queryBali = `
+            PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX edm: <http://www.europeana.eu/schemas/edm/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+SELECT ?obj ?link ?title WHERE {
+  ?obj edm:isShownBy ?link .
+  ?obj dc:title ?title .
+  ?obj dc:subject <https://hdl.handle.net/20.500.11840/termmaster4849> .
+
+  FILTER langMatches(lang(?title), "ned")
+}
+            `
+
+        const querySoenda = `
+            PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX edm: <http://www.europeana.eu/schemas/edm/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+SELECT ?obj ?link ?title WHERE {
+  ?obj edm:isShownBy ?link .
+  ?obj dc:title ?title .
+  ?obj dc:subject <https://hdl.handle.net/20.500.11840/termmaster4881> .
+
+  FILTER langMatches(lang(?title), "ned")
+}`
+
+        const queryAmbon = `{PREFIX dc: <http://purl.org/dc/elements/1.1/>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+    PREFIX edm: <http://www.europeana.eu/schemas/edm/>
+    PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+    SELECT ?obj ?link ?title WHERE {
+      ?obj edm:isShownBy ?link .
+      ?obj dc:title ?title .
+      ?obj dc:subject <https://hdl.handle.net/20.500.11840/termmaster4818> .
+
+      FILTER langMatches(lang(?title), "ned")
+    }}`
+
+        const queryMadura = `PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX edm: <http://www.europeana.eu/schemas/edm/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+SELECT ?obj ?link ?title WHERE {
+  ?obj edm:isShownBy ?link .
+  ?obj dc:title ?title .
+  ?obj dc:subject <https://hdl.handle.net/20.500.11840/termmaster4809> .
+
+  FILTER langMatches(lang(?title), "ned")
+}`

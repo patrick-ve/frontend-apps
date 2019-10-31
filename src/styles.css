@@ -34,6 +34,15 @@ button {
     text-align: center;
 }
 
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+option {
+    text-align: center;
+}
 
 
 app-input {

@@ -15,7 +15,8 @@ export class InputComponent {
     title = 'image-gallery'
     private data: any = []
     constructor(private http: HttpClient) {}
-    getData() {
+    generateData() {
+        console.log(this.selectedOption)
         const url = 'https://jsonplaceholder.typicode.com/photos?albumId=1'
         this.http.get(url).subscribe(res => {
             this.data = res
