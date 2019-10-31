@@ -1,32 +1,4 @@
-# FrontendApps
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-<h1 align="center">Welcome to Frontend Apps 👋</h1>
+<h1 align="center">Welcome to Masyarakat Indonesia 🇮🇩👋</h1>
 <p>
   <img src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <img src="https://img.shields.io/badge/npm-%3E%3D5.5.0-blue.svg" />
@@ -42,7 +14,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
   </a>
 </p>
 
-> Welcome to my README.md, where I will try to take you on a magical journey with Angular ~~2~~ ~~4~~ 8!
+> Welcome to Masyarakat Indonesia, a etnographic enhancement tool built in Angular ~~2~~ ~~4~~ 8! Indonesia is a country that spans almost the same distance as Portugal to the Ukraine. With over 14.000 islands it forms the largest archipelago in the world. Masyarakat Indonesia (_Peoples of Indonesia_) aims to inform people about the many different etnicities and peoples (there are over 340!) that make up the country of Indonesia.
+> This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
 
 ### 🏠 [Homepage](https://github.com/patrick-ve/frontend-apps)
 
@@ -51,6 +24,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 - npm &gt;=5.5.0
 - node &gt;=9.3.0
+
 
 ## ⌨️ Install
 
@@ -61,32 +35,56 @@ git clone https://github.com/patrick-ve/frontend-apps.git
 
 Install the Angular CLI
 ```sh
-sudo npm install -g @angular/cli
+sudo npm install -g @angular/cli@latest
 ```
+> Adding sudo is not necessary on machines that run on Windows and might also not be necessary on MacOS
 
 Install required npm packages
 ```sh
 npm install
 ```
+> Add `npm audit fix` for package updates!
 
-## 🏃‍ Build app
 
+## 🏃‍ Run app
+
+To run this Angular app, run the following command from your terminal:
+```sh
+ng serve --open <PORT_NUMBER>
+```
+This will open the browser on a port that you have specified. The default port wil be 4200 if no port is specified.
+
+Run the following command from your terminal to build the project for use on your own device. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 ```sh
 ng build
-```
+``` 
+
 
 ## 🔑 .env
-This projects uses an .env file, which contains all credentials and variables. You should add it, before running 'npm run start'
-```
-APP_PORT=<port_number>
-DB_HOST=<host_name>
-DB_USER=<db_user>
-DB_PASS=<db_password>
-```
+This projects uses no .env files, which normally contain all credentials and variables.
+
 
 ## ➡️ Plugins
-This project uses an editorconfig file (.editorconfig) to keep all code styles and syntax consistent across every contributor of this project. If your code editor does not support editorconfig natively please install a plugin for your code editor.
+This project uses an editorconfig file (.editorconfig) to keep all code styles and syntax consistent across every contributor of this project. If your code editor does not support editorconfig natively please install a plugin for your code editor. It uses the following settings:
+
+```javascript
+# Editor configuration, see https://editorconfig.org
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.md]
+max_line_length = off
+trim_trailing_whitespace = false
+```
+
 See https://editorconfig.org/#overview for further details.
+
 
 ## 👤 Author
 
@@ -94,13 +92,18 @@ See https://editorconfig.org/#overview for further details.
 
 * Github: [@patrick-ve](https://github.com/patrick-ve)
 
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/patrick-ve/LoveStories/issues).
+* Marc Kunst: [@MarcKunst](https://github.com/MarcKunst)
+* Mohamad Al Ghorani: [@MohamadAlGhorani](https://github.com/MohamadAlGhorani)
+
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
+
 
 ## 📝 License
 
