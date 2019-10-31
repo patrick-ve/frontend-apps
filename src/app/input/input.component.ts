@@ -13,28 +13,44 @@ export class InputComponent {
     selectedOption: string
 
     title = 'image-gallery'
-    public data: any = []
     public collectedData: any = []
     public randomPortretData: any = []
     public randomKledingData: any = []
+    public randomTempelData: any = []
+    public pageData: any = []
 
     constructor(private http: HttpClient) {}
     generateData() {
         const queryURL = this.selectedOption
         console.log(queryURL)
         this.http.get(queryURL).subscribe(res => {
-            this.data = res
-            this.collectedData.push(this.data) // Om een of andere reden moet this.data in een nieuwe array gestopt worden (collectedData)
+            this.collectedData.push(res) // Om een of andere reden moet this.data in een nieuwe array gestopt worden (collectedData)
 
+            // Random portret van een man of vrouw zoeken
             this.collectedData[0].results.bindings.forEach(item => {
-                if (item.title.value.includes('vrouw') == true || item.title.value.includes(' man') == true) {
+                if (item.title.value.includes('vrouw') || item.title.value.includes(' man') || item.title.value.includes('kinderen')) {
                     this.randomPortretData.push(item)
                 }
             })
 
+            // Random kleding zoeken
             this.collectedData[0].results.bindings.forEach(item => {
-                if (item.title.value.includes('kleding')) {
+                if (
+                    item.title.value.includes('wajang') ||
+                    item.title.value.includes('wayang') ||
+                    item.title.value.includes('gamelan') ||
+                    item.title.value.includes('garoeda') ||
+                    item.title.value.includes('kris') ||
+                    item.title.value.includes('sarong')
+                ) {
                     this.randomKledingData.push(item)
+                }
+            })
+
+            // Random tempel zoeken
+            this.collectedData[0].results.bindings.forEach(item => {
+                if (item.title.value.includes(' tempel') || item.title.value.includes(' moskee') || item.title.value.includes(' kerk')) {
+                    this.randomTempelData.push(item)
                 }
             })
 
@@ -42,6 +58,12 @@ export class InputComponent {
             console.log('Random verzameling portretten:', randomPortret)
             var randomKleding = this.randomKledingData[Math.floor(Math.random() * this.randomKledingData.length)]
             console.log('Random kleding:', randomKleding)
+            var randomTempel = this.randomTempelData[Math.floor(Math.random() * this.randomTempelData.length)]
+            console.log('Random tempel:', randomTempel)
+            this.pageData.push(randomPortret)
+            this.pageData.push(randomKleding)
+            this.pageData.push(randomTempel)
+            console.log(this.pageData)
         })
     }
 }

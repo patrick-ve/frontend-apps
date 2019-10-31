@@ -12,9 +12,7 @@
 </div>
 
 
-<!-- <div class="gallery" *ngFor="let image of data | slice:0:5; let i=index">
-    <a target="_blank" [href]="image.href">
-        <img [src]="image.thumbnailUrl" width="300" height="200">
-    </a>
-    <div class="desc">{{image.title}}</div>
-</div> -->
+<div class="gallery" *ngFor="let instance of pageData | slice:0:5; let i=index">
+    <img [src]="instance.link.value" />
+    <p>{{ instance.link.title }}</p>
+</div>
