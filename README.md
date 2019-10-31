@@ -28,9 +28,9 @@
 
 ## ⌨️ Install
 
-Clone the repository into a folder
+Clone the repository into a folder and navigate to this folder
 ```sh
-git clone https://github.com/patrick-ve/frontend-apps.git
+git clone https://github.com/patrick-ve/frontend-apps.git && cd frontend-apps
 ```
 
 Install the Angular CLI
