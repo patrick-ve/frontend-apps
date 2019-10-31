@@ -13,10 +13,8 @@
     "private": true,
     "dependencies": {
         "@angular/animations": "~8.2.9",
-        "@angular/cli": "^8.3.17",
         "@angular/common": "~8.2.9",
         "@angular/compiler": "~8.2.9",
-        "@angular/compiler-cli": "^8.2.13",
         "@angular/core": "~8.2.9",
         "@angular/forms": "~8.2.9",
         "@angular/platform-browser": "~8.2.9",
@@ -50,7 +48,7 @@
         "protractor": "~5.4.0",
         "ts-node": "~7.0.0",
         "tslint": "~5.15.0",
-        "typescript": "^3.6.4"
+        "typescript": "^3.4.5"
     },
     "engines": {
         "node": "12.2.0",
