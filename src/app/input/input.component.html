@@ -2,7 +2,7 @@
     <label for="people-select">Ik wil meer te weten komen over:</label>
 
     <select name="peoples" id="people-select" [(ngModel)]="selectedOption">
-        <option [value]="people.termmaster" *ngFor="let people of peoples">{{ people.name }}</option>
+        <option [value]="people.termmasterQuery" *ngFor="let people of peoples">{{ people.name }}</option>
     </select>
 
     <button (click)="generateData()">

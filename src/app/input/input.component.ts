@@ -14,13 +14,13 @@ export class InputComponent {
 
     title = 'image-gallery'
     private data: any = []
+
     constructor(private http: HttpClient) {}
     generateData() {
-        console.log(this.selectedOption)
-        const url = 'https://jsonplaceholder.typicode.com/photos?albumId=1'
-        this.http.get(url).subscribe(res => {
-            this.data = res
-            console.log(this.data)
+        const queryURL = this.selectedOption
+        this.http.get(queryURL).subscribe(res => {
+            // this.data = res
+            console.log(res)
         })
     }
 }
