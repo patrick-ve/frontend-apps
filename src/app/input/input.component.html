@@ -11,8 +11,9 @@
 
 </div>
 
-
-<div class="gallery" *ngFor="let instance of pageData | slice:0:5; let i=index">
-    <img [src]="instance.link.value" />
-    <p>{{ instance.link.title }}</p>
-</div>
+<section>
+    <div class="gallery__wrapper" *ngFor="let instance of pageData | slice:0:5; let i=index">
+        <img class="gallery__wrapper--image" [src]="instance.link.value" />
+        <p class="gallery__wrapper--description">{{ instance.title.value }}</p>
+    </div>
+</section>
