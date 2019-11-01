@@ -15,7 +15,7 @@
 </p>
 
 > Welcome to Masyarakat Indonesia, a etnographic enhancement tool built in Angular ~~2~~ ~~4~~ 8! Indonesia is a country that spans almost the same distance as Portugal to the Ukraine. With over 14.000 islands it forms the largest archipelago in the world. Masyarakat Indonesia (_Peoples of Indonesia_) aims to inform people about the many different etnicities and peoples (there are over 340!) that make up the country of Indonesia.
-> This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
+> This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9 and the final result can be viewed [here](https://masyarakat-indonesia.herokuapp.com/).
 
 ### 🏠 [Homepage](https://github.com/patrick-ve/frontend-apps)
 
